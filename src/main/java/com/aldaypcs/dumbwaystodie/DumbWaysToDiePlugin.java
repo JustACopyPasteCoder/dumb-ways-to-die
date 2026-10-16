@@ -174,9 +174,9 @@ public class DumbWaysToDiePlugin extends Plugin
 				SoundFiles.copyIfPlayable(chosen, destination);
 				updateStatus();
 			}
-			catch (UnsupportedAudioFileException e)
+			catch (SoundFiles.NotPlayableException e)
 			{
-				currentPanel.showError("That file can't be played. Only WAV files work; 16-bit PCM is safest.");
+				currentPanel.showError("That file can't be used: " + e.getMessage() + ". 16-bit PCM WAV is safest.");
 			}
 			catch (IOException e)
 			{
@@ -206,7 +206,7 @@ public class DumbWaysToDiePlugin extends Plugin
 		{
 			currentPanel.showStatus(String.format("Sound set (%.1f seconds).", SoundFiles.lengthSeconds(file)));
 		}
-		catch (IOException | UnsupportedAudioFileException e)
+		catch (IOException | SoundFiles.NotPlayableException e)
 		{
 			currentPanel.showError("The saved sound can't be played. Choose another WAV file.");
 		}
