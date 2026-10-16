@@ -33,7 +33,7 @@ import net.runelite.client.util.ImageUtil;
 )
 public class DumbWaysToDiePlugin extends Plugin
 {
-	static final String INTERNAL_NAME = "dumbwaystodie";
+	static final String INTERNAL_NAME = "dumb-ways-to-die";
 	static final String SOUND_FILE_NAME = "death.wav";
 	private static final String TEST_COMMAND = "deathsound";
 

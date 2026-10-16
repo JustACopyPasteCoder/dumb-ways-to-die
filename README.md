@@ -23,7 +23,7 @@ Audacity (File > Export > Export as WAV), or ffmpeg:
 ## Notes
 
 - The sound plays on every death of your own character, including safe deaths in minigames.
-- Your chosen sound is copied to `.runelite/plugin-data/dumbwaystodie/death.wav`.
+- Your chosen sound is copied to `.runelite/plugin-data/dumb-ways-to-die/death.wav`.
 - The name refers to the well-known rail safety campaign. This plugin isn't affiliated with it and includes none of its audio.
 
 ## Development
