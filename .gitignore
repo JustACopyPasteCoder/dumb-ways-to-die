@@ -1,0 +1,15 @@
+.gradle
+build
+.idea/
+.project
+.settings/
+.classpath
+nbactions.xml
+nb-configuration.xml
+nbproject/
+*.class
+# Personal launcher and audio clips stay local
+Play RuneLite.bat
+*.wav
+*.mp3
+*.mp4
